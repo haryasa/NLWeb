@@ -721,7 +721,7 @@ async def loadJsonToDB(file_path: str, site: str, batch_size: int = 100, delete_
                     resolved_path = file_path
         
         # Use specified database or fall back to preferred endpoint
-        endpoint_name = database or CONFIG.preferred_retrieval_endpoint
+        endpoint_name = database or CONFIG.write_endpoint
         
         print(f"Loading data from {original_path} (resolved to {resolved_path}) for site {site} using database endpoint '{endpoint_name}'")
         
