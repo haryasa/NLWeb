@@ -3,8 +3,8 @@
  * Handles the UI and message processing for the chat interface
  */
 
-import { ManagedEventSource } from './managed-event-source.js';
-import { jsonLdToHtml } from './utils.js';
+import { ManagedEventSource } from '../managed-event-source.js';
+import { jsonLdToHtml } from '../utils.js';
 
 
 export class ChatInterface {
